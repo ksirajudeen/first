@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Please Enter Your Username And Phone Number</div>
+    
+         <table  align="center" bgcolor="white">
+		<tr>
+			
+		</tr>
+		<tr>
+			<td>
+				<form action="CreateServlet">
+				  <table cellspacing="5" cellpadding="3">	
+			<!--<tr><td>ACCOUNT NO:</td><td> <input type="text" id="fetc" name="ACCOUNTNO"/></td></tr>-->	        
+					<tr><td>USER NAME:</td><td> <input type="text" id="inputTesting" name="username"/></td></tr>                            
+					<tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
+					<tr><td>RE-PASSWORD:</td><td> <input type="password" name="repassword"/></td></tr>
+					<tr><td>AMOUNT:</td><td> <input type="text" name="amount"/></td></tr>
+					<!-- Gender:<br/><br/>
+					Male<input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="female"/><br/><br/> -->
+					<tr><td>ADDRESS:</td><td> <input type="text" name="adderess"/></td></tr>
+					<tr><td>PHONE:</td><td> <input type="text" id="inputTesting1" name="phone"/></td></tr>					
+                                        <tr><td><input type="submit" value="Submit"/></td>
+                                        <td><INPUT TYPE=RESET VALUE="CLEAR"></td></tr>
+					</table>
+               		</form>
+			</td>
+		</tr>
+	
+	</table>
+        <script type="text/javascript">
+       
+        
+         //var mylist=document.getElementById('result').innerHTML=localstorage.getItem('usnm');  
+              var inputTest = localStorage['usnm'];
+              localStorage.removeItem( 'usnm' ); // Clear the localStorage
+              var displayData = inputTest;
+              
+              var inputTest1 = localStorage['phnm'];
+              localStorage.removeItem( 'phnm' ); // Clear the localStorage
+              var displayData1 = inputTest1;
+     // alert('Inserted Data' + inputTest);
+      
+              //document.write(inputTest);
+              document.getElementById('inputTesting').value=inputTest;
+              document.getElementById('inputTesting1').value=inputTest1;
+            //document.getElementById('username').innerHTML=localstorage.getItem("textvalue1");    
+            //document.getElementById("phone").innerHTML=localstorage.getItem("textvalue2");     
+          //document.getElementById('inputTesting').value="16";
+      
+        </script>
+    </body>
+</html>
