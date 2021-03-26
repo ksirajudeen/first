@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TO DO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+          function copy()
+          {
+          var user=document.getElementById('usn').value;         
+          var phonenumb= document.getElementById('phn').value;
+          //document.getElementById('phn').value=user;          
+          localStorage.setItem('usnm',user);
+          localStorage.setItem('phnm',phonenumb);       
+       // window.location.href= "http://localhost:3030/WebApplication1/test.html";
+          //window.location.href = "test.html";
+          return false;
+          }
+         </script>
+    </head>
+    
+    <body>
+    
+        
+        
+        <table  align="center" bgcolor="white">
+		<tr>
+			
+		</tr>
+		<tr>
+			<td>
+				<form action="CreateServlet2">
+				  <table cellspacing="5" cellpadding="3">	
+				        <center> <div>Please Enter Your Username And Phone Number To Register</div></center>
+                                      <tr><td><label>USERNAME:</label></td><td> <input type="text" name="username" id="usn"/></td></tr>                                     
+                                      <tr><td><label>PHONE NUMBER:</label></td><td> <input type="text" name="phone" id="phn"/></td></tr>
+                                      <a href="admin.jsp"><h2 style="color:rgb(456,0,76)">Click hear If You Are Admin?</h2></a>
+                                      <tr><td></td><td><input type="submit" value="Get OTP" onclick="copy();"/>				
+					<INPUT TYPE=RESET VALUE="CLEAR"></td>
+                                        
+ 
+					</table>
+               		</form>
+                            
+			</td>
+		</tr>
+	
+	</table>
+    </body>
+</html>
